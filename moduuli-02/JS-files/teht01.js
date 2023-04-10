@@ -14,4 +14,6 @@ list[2] = n3;
 list[3] = n4;
 list[4] = n5;
 
-console.log(list);
+for(let i = list.length-1; i >= 0; i--){
+  console.log(list[i])
+}
