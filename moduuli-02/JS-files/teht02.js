@@ -13,6 +13,6 @@ list.sort()
 let list2 = document.getElementById("target");
 list.forEach((i)=>{
   let li = document.createElement("li");
-  li.innerText = i;
+  li.appendChild(document.createTextNode(i));
   list2.appendChild(li);
 });
