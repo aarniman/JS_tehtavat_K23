@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="teht05.js"></script>
+</head>
+<body>
+    <h1>Chuck Norris joke is in the console</h1>
+    <script>
+        async function getJoke() {
+          try {
+            const response = await fetch("https://api.chucknorris.io/jokes/random");
+            const jsonData = await response.json();
+            console.log(jsonData.value);
+          } catch (error){
+            console.log(error.message);
+          }
+        }
+
+        getJoke();
+    </script>
+</body>
+</html>
